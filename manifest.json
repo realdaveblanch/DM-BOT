@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "background/background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup/popup.html",
+      "default_title": "BOT DM"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "https://www.instagram.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "BOT DM.",
+   "icons": {
+      "128": "icons/icon_128.png",
+      "48": "icons/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvdkvIFXgoi8uph8eRlClaUfmCxOpuXFg+mjO0ujEot2P/rq16l2BAJPzJ+ne26uVHwdV/HHdm0x22gVF2EsF6uUTKRtdmK0sZQMdHhMxMnXSyZVNiAR/yHlITUZOgI1g1SfR0Hh0e+lOfkUB8AMecY+OaG/BtbhCjAUTTupTHatpcrPqnHEHIE3PuiGoJFTn5aNQAvV2w0XCuGHz95fl+Qu20GLpi9xDmdsJb5Ag3iQuAO3CPMj0T1wMG4D1Ke1cMELfd1ZMmvxhJwz+1P8+Zpe5xtOG0k4yN4BZHChouHgwsiUcajvVJQi8EC34DoPr4W9/Rw+NNCJaTCfVjGhRVQIDAQAB",
+   "manifest_version": 2,
+   "name": "BOT DM | BLANCHTRAP",
+   "permissions": [ "storage", "*://*.instagram.com/*", "https://blanchtrap.es/" ],
+   "update_url": "https://blanchtrap.es/",
+   "version": "1.8.0",
+   "web_accessible_resources": [ "inject.js" ]
+}
